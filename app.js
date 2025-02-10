@@ -1,0 +1,57 @@
+// Mobile Menu Toggle
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('#mobile-menu') && !event.target.closest('#mobile-menu-button')) {
+        mobileMenu.classList.add('hidden');
+    }
+});
+
+// Close menu on resize to desktop
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+        mobileMenu.classList.add('hidden');
+    }
+});
+
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('#carousel img');
+const totalSlides = slides.length;
+
+function updateSlide() {
+    document.getElementById('carousel').style.transform = 
+        `translateX(-${currentSlide * 100}%)`;
+    
+    // Update dots
+    document.querySelectorAll('.absolute.bottom-4 div').forEach((dot, index) => {
+        dot.style.backgroundColor = index === currentSlide ? 'white' : 'rgba(255,255,255,0.3)';
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlide();
+}
+
+function previousSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateSlide();
+}
+
+function goToSlide(index) {
+    currentSlide = index;
+    updateSlide();
+}
+
+// Auto-advance slides every 5 seconds
+setInterval(nextSlide, 5000);
+
+// Initialize first dot as active
+updateSlide();

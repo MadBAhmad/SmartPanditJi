@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>PanditJi</title>
+</head>
+<body>
+         <!-- Header -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-black hover:text-gray-600 hover:bg-gray-100 px-4 py-2 rounded">Puja Samagri</a>
+                    <a href="#" class="text-black hover:text-gray-600 hover:bg-gray-100 px-4 py-2 rounded">Puja Costing</a>
+                    <a href="#" class="text-black hover:text-gray-600 hover:bg-gray-100 px-4 py-2 rounded">Puja Charges</a>
+                    <a href="#" class="text-black hover:text-gray-600 hover:bg-gray-100 px-4 py-2 rounded">Pandit Ji Bio</a>
+                </div>
+
+                <!-- Mobile Hamburger Icon -->
+                <button id="mobile-menu-button" class="md:hidden text-black">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg">
+                <div class="flex flex-col space-y-4 p-4">
+                    <a href="#" class="text-black hover:text-gray-600 hover:bg-gray-100 px-4 py-2 rounded">Puja Samagri</a>
+                    <a href="#" class="text-black hover:text-gray-600 hover:bg-gray-100 px-4 py-2 rounded">Puja Costing</a>
+                    <a href="#" class="text-black hover:text-gray-600 hover:bg-gray-100 px-4 py-2 rounded">Puja Charges</a>
+                    <a href="#" class="text-black hover:text-gray-600 hover:bg-gray-100 px-4 py-2 rounded">Pandit Ji Bio</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Image Carousel -->
+    <div class="container mx-auto px-6 py-8">
+        <div class="relative overflow-hidden rounded-lg">
+            <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+                <!-- Dummy Images from picsum.photos -->
+                <img src="./src/assets/lord-radha-krishna-beautiful-wallpaper-hindu-god-colorful-background-163716977.webp" class="w-full h-96 object-cover" alt="Puja 1">
+                <img src="./src/assets/il_570xN.5657466422_26a8.webp" class="w-full h-96 object-cover" alt="Puja 2">
+                <img src="./src/assets/desktop-wallpaper-god-ram-darbar-thumbnail.jpg" class="w-full h-96 object-cover" alt="Puja 3">
+                <img src="./src/assets/depositphotos_318781246-stock-illustration-hindu-lord-ganesha-texture-wallpaper.jpg" class="w-full h-96 object-cover" alt="Puja 4">
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button onclick="previousSlide()" class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/30 text-white p-4 hover:bg-black/50">
+                &lt;
+            </button>
+            <button onclick="nextSlide()" class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/30 text-white p-4 hover:bg-black/50">
+                &gt;
+            </button>
+
+            <!-- Dots Indicator -->
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+                <div class="w-3 h-3 rounded-full bg-white/30 hover:bg-white/50 cursor-pointer" onclick="goToSlide(0)"></div>
+                <div class="w-3 h-3 rounded-full bg-white/30 hover:bg-white/50 cursor-pointer" onclick="goToSlide(1)"></div>
+                <div class="w-3 h-3 rounded-full bg-white/30 hover:bg-white/50 cursor-pointer" onclick="goToSlide(2)"></div>
+                <div class="w-3 h-3 rounded-full bg-white/30 hover:bg-white/50 cursor-pointer" onclick="goToSlide(3)"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
