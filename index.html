@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>PanditJi</title>
 </head>
 
@@ -23,11 +20,14 @@
             </div>
 
             <!-- Mobile Hamburger Icon -->
-            <button id="mobile-menu-button" class="md:hidden text-black">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
+            <div class="flex justify-between">
+                <button id="mobile-menu-button" class="md:hidden text-black">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                <img class="w-14 md:hidden" src="./src/assets/cropped_image.png" alt="">
+            </div>
         </div>
 
         <!-- Mobile Menu -->
@@ -42,10 +42,13 @@
     </nav>
 </header>
 
+
+
+
 <body class="">
-    <section class="bg-orange-400 mb-2">
+    <section class="">
     <!-- Image Carousel -->
-    <div class="w-full ">
+    <div class="w-full">
         <div class="relative overflow-hidden rounded-lg">
             <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
                 <!-- Dummy Images from picsum.photos -->
@@ -76,10 +79,10 @@
 </section>
 
 <!-- Section 2 -->
-<section class="bg-[#fdf2f2] mb-2">
+<section class="">
     <div class="container mx-auto px-6 py-18">
         <div class="">
-            <div class="flex items-center gap-2">
+            <div class=" md:flex items-center gap-2">
                 <div class="left w-1/2">
                     <div class="contact-info">
                         <div>
@@ -105,7 +108,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto px-6 py-18">
+        <div class="container mx-auto px-6 pt-18">
             <div>
                 <div class="mb-6">
                     <h1 class="text-center text-4xl uppercase font-extrabold font-stretch-condensed"><span class="text-red-600 font-stretch-condensed">Shri Angad Dwivedi</span> - Achievements</h1>
@@ -137,7 +140,78 @@
         </div>
     </div>
 </section>
+    <!-- Services section -2 -->
+<section>
+    <div class="min-h-screen relative">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0  bg-cover bg-center">
+            <img class="w-full" src="./src/assets/peakpx.jpg" alt="">
+        </div>
+        <div class="absolute inset-0 bg-neutral-400 opacity-20"></div>
+        
+        <!-- Content Container -->
+        <div class="relative container mx-auto px-4 py-36 z-10">
+            <!-- Grid Container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Box 1 - Bhagwat Katha -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow flex items-center">
+                    <div class="w-[50%] rounded-l-md">
+                        <img class="rounded-l-md" src="./src/assets/shrimad-bhagwat-katha.jpg" alt="">
+                    </div>
+                    <div class="w-[50%] rounded-l-md p-4">
+                        <h2 class="text-xl font-extrabold  mb-4">BHAGWAT KATHA</h2>
+                    <p class="text-gray-600 mb-4 text-sm">Shrimad Bhagwat is the image of the God of God and that is why it is worshiped in reverence. By its recitation and...</p>
+                    <p class="font-semibold mb-4">Price: <span class="text-red-500">₹ Price on Request</span></p>
+                    </div>
+                    
+                </div>
+
+                <!-- Box 2 - Diwali Pooja -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow flex items-center">
+                    <div class="w-[50%] rounded-l-md">
+                        <img class="rounded-l-md h-[200px]" src="./src/assets/diwali-pooja.jpg" alt="">
+                    </div>
+                    <div class="w-[50%] rounded-l-md pl-4">
+                        <h2 class="text-xl font-extrabold  mb-4 uppercase">Diwali Pooja</h2>
+                    <p class="text-gray-600 mb-4 text-sm">Diwali is the festival of Laxmi, the Goddess of prosperity and wealth. It is believed that Goddess Laxmi visits everyone.</p>
+                    <p class="font-semibold mb-4">Price: <span class="text-red-500">₹ Price on Request</span></p>
+                    </div>
+                    
+                </div>
+
+                <!-- Box 3 - Marriage Ceremony -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow flex items-center">
+                    <div class="w-[50%] rounded-l-md">
+                        <img class="rounded-l-md" src="./src/assets/shrimad-bhagwat-katha.jpg" alt="">
+                    </div>
+                    <div class="w-[50%] rounded-l-md p-4">
+                        <h2 class="text-xl font-extrabold  mb-4 uppercase">Marriage Ceremony</h2>
+                    <p class="text-gray-600 mb-4 text-sm">Marriages, according to Hindu beliefs are made in heaven, once you are married, the bond is supposed to last forever.</p>
+                    <p class="font-semibold mb-4">Price: <span class="text-red-500">₹ Price on Request</span></p>
+                    </div>
+                    
+                </div>
+
+                <!-- Box 4 - Office Pooja -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow flex items-center">
+                    <div class="w-[50%] rounded-l-md">
+                        <img class="rounded-l-md object-scale-down" src="./src/assets/office-pooja.jpg" alt="">
+                    </div>
+                    <div class="w-[50%] rounded-l-md p-4">
+                        <h2 class="text-xl font-extrabold  mb-4 uppercase">Office Pooja</h2>
+                    <p class="text-gray-600 mb-4 text-sm">Shrimad Bhagwat is the image of the God of God and that is why it is worshiped in reverence. By its recitation and...</p>
+                    <p class="font-semibold mb-4">Price: <span class="text-red-500">₹ Price on Request</span></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <Button><a href="./positioning.html"> Positioning example</a></Button>
+</section>
     <script src="./app.js"></script>
 </body>
 
-</html>
+</html> 
