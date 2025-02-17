@@ -55,3 +55,5 @@ setInterval(nextSlide, 5000);
 
 // Initialize first dot as active
 updateSlide();
+
+

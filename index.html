@@ -5,10 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/output.css">
     <title>PanditJi</title>
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            animation: marquee 20s linear infinite;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .animate-marquee {
+                animation: none;
+                white-space: normal;
+            }
+        }
+    </style>
 </head>
 
  <!-- Header -->
  <header class="bg-white shadow-md">
+    <!-- Announcement Bar -->
+    <div class="bg-red-600 p-2 overflow-hidden border-b border-amber-100">
+        <div class="animate-marquee whitespace-nowrap flex items-center space-x-4">
+            <!-- Duplicate content for seamless loop -->
+            <span class="text-black font-medium text-sm">✨ Special Offer: Book your Puja today & get 10% off! 🪔</span>
+            <span class="text-black font-medium text-sm">✨ Special Offer: Book your Puja today & get 10% off! 🪔</span>
+            <span class="text-black font-medium text-sm">✨ Special Offer: Book your Puja today & get 10% off! 🪔</span>
+        </div>
+    </div>
     <nav class="container mx-auto px-6 py-4">
         <div class="flex justify-between items-center">
             <!-- Desktop Menu -->
@@ -52,11 +76,11 @@
         <div class="relative overflow-hidden rounded-lg">
             <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
                 <!-- Dummy Images from picsum.photos -->
-                <img src="./src/assets/slider-img1.jpg" class="w-full h-[600px] object-cover" alt="Puja 1">
-                <img src="./src/assets/il_570xN.5657466422_26a8.webp" class="w-full h-[600px] object-cover" alt="Puja 2">
-                <img src="./src/assets/desktop-wallpaper-god-ram-darbar-thumbnail.jpg" class="w-full h-[600px] object-cover" alt="Puja 3">
-                <img src="./src/assets/depositphotos_318781246-stock-illustration-hindu-lord-ganesha-texture-wallpaper.jpg" class="w-full h-[600px] object-cover" alt="Puja 4">
-                <img src="./src/assets/WhatsApp Image 2025-02-10 at 17.15.51.jpeg" class="w-full h-[600px] object-cover" alt="Puja 4">
+                <img src="./src/assets/slider-img1.jpg" alt="Puja 1">
+                <img src="./src/assets/slider2.jpg" class="w-full h-[600px] object-cover" alt="Puja 2">
+                <img src="./src/assets/slider-img3.jpg" alt="Puja 3">
+                <!-- <img src="./src/assets/slider-img3.jpg" class="w-full h-[600px] object-cover" alt="Puja 4"> -->
+                <!-- <img src="./src/assets/WhatsApp Image 2025-02-10 at 17.15.51.jpeg" class="w-full h-[600px] object-cover" alt="Puja 4"> -->
             </div>
 
             <!-- Navigation Buttons -->
