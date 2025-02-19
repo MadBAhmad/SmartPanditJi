@@ -4,22 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./style.css">
     <title>PanditJi</title>
-    <style>
-        @keyframes marquee {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
-        .animate-marquee {
-            animation: marquee 20s linear infinite;
-        }
-        @media (prefers-reduced-motion: reduce) {
-            .animate-marquee {
-                animation: none;
-                white-space: normal;
-            }
-        }
-    </style>
+       
 </head>
 
  <!-- Header -->
@@ -28,7 +15,7 @@
     <div class="bg-red-600 p-2 overflow-hidden border-b border-amber-100">
         <div class="animate-marquee whitespace-nowrap flex items-center space-x-4">
             <!-- Duplicate content for seamless loop -->
-            <span class="text-black font-medium text-sm">✨ Special Offer: Book your Puja today & get 10% off! 🪔</span>
+            <span class="text-black font-medium text-sm font-stretch-condensed">✨ Special Offer: Book your Puja today & get 10% off! 🪔</span>
             <span class="text-black font-medium text-sm">✨ Special Offer: Book your Puja today & get 10% off! 🪔</span>
             <span class="text-black font-medium text-sm">✨ Special Offer: Book your Puja today & get 10% off! 🪔</span>
         </div>
@@ -74,12 +61,12 @@
     <!-- Image Carousel -->
     <div class="w-full">
         <div class="relative overflow-hidden rounded-lg">
-            <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+            <div id="carousel" class="w-full flex transition-transform duration-500 ease-in-out">
                 <!-- Dummy Images from picsum.photos -->
-                <img src="./src/assets/slider-img1.jpg" alt="Puja 1">
-                <img src="./src/assets/slider2.jpg" class="w-full h-[600px] object-cover" alt="Puja 2">
-                <img src="./src/assets/slider-img3.jpg" alt="Puja 3">
-                <!-- <img src="./src/assets/slider-img3.jpg" class="w-full h-[600px] object-cover" alt="Puja 4"> -->
+                <img src="./src/assets/imresizer-1739792267492.jpg" class="w-full h-[600px] object-cover" alt="Puja 1">
+                <img src="./src/assets/slider_unsp.jpg" class="w-full h-[600px] object-cover" alt="Puja 2">
+                <img src="./src/assets/imresizer-17397923" class="w-full h-[600px] object-cover" alt="Puja 3">
+                <img src="./src/assets/imresizer-173" class="w-full h-[600px] object-cover" alt="Puja 4">
                 <!-- <img src="./src/assets/WhatsApp Image 2025-02-10 at 17.15.51.jpeg" class="w-full h-[600px] object-cover" alt="Puja 4"> -->
             </div>
 
@@ -232,7 +219,7 @@
                     
                 </div>
                 <!-- Box 5 - Office Pooja -->
-                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow flex items-center">
+                <!-- <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow flex items-center">
                     <div class="w-[50%] rounded-l-md">
                         <img class="rounded-l-md object-scale-down" src="./src/assets/office-pooja.jpg" alt="">
                     </div>
@@ -242,10 +229,10 @@
                     <p class="font-semibold mb-4">Price: <span class="text-red-500">₹ Price on Request</span></p>
                     </div>
                     
-                </div>
+                </div> -->
 
                 <!-- Box 6 - Office Pooja -->
-                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow flex items-center">
+                <!-- <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow flex items-center">
                     <div class="w-[50%] rounded-l-md">
                         <img class="rounded-l-md object-scale-down" src="./src/assets/office-pooja.jpg" alt="">
                     </div>
@@ -255,7 +242,7 @@
                     <p class="font-semibold mb-4">Price: <span class="text-red-500">₹ Price on Request</span></p>
                     </div>
                     
-                </div>
+                </div> -->
                 
             </div>
         </div>
@@ -267,7 +254,8 @@
 <section>
     <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
         <div class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl" aria-hidden="true">
-          <div class="mx-auto aspect-1155/678 w-[72.1875rem] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          <!-- bg-gradient style-none -->
+          <!-- <div class="mx-auto aspect-1155/678 w-[72.1875rem] bg-linear-to-tr from-[#ff80b5] to-red-600 opacity-80" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div> -->
         </div>
         <div class="mx-auto max-w-4xl text-center">
           <!-- <h2 class="text-base/7 font-semibold text-indigo-600"><span class="text-red-600">Pooja Pricing</span></h2> -->
@@ -389,6 +377,56 @@
       
 
     </div>
+</section>
+
+<section>
+  <footer class="w-full bg-orange-400">
+    <div class="flex items-center ">
+      <div class="w-1/2 lg:flex lg:items-center gap-8 p-4">
+        <img  src="./src/assets/22728176_6690904 (1).svg" alt="">
+        <div class="text-center ">
+          <h1 class="text-3xl ">Shri Angad Dwivedi</h1><br>
+        <p>Address : No. 550/1, 10th Cross, Begur Koppa Road, GRY Layout,
+          Vaddarapajya VTC-Mylasandra, Po-Dommanahalli, Bangalore-500000</p><br>
+          <p class="font-extrabold">Contact Me</p>
+          <div class="flex items-center gap-3 justify-center cursor-pointer p-2 shadow-2xl rounded-md">
+            <img src="./src/assets/whatsapp.svg" alt="">
+            <p>9066154211, 8217337789</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- <div class="flex gap-14 justify-evenly"> -->
+      <div class="font-stretch-condensed">
+        <ul>
+          <li>All types of pooja/path</li>
+          <li>Satyanarayan Pooja</li>
+          <li>Marriage</li>
+          <li>Grihapravesh</li>
+          <li>Durga Path</li>
+          <li>Mata ki Chowki</li>
+          <li>North Indian Style Pooja</li>
+        </ul>
+      </div>
+      <div class="font-stretch-condensed">
+        <h1 class>Shri Angad Dwivedi</h1>
+        <ul>
+          <li>All types of pooja/path</li>
+          <li>Satyanarayan Pooja</li>
+          <li>Marriage</li>
+          <li>Grihapravesh</li>
+          <li>Durga Path</li>
+          <li>Mata ki Chowki</li>
+          <li>North Indian Style Pooja</li>
+        </ul>
+      </div>
+    </div>
+      
+
+    </div>
+
+  </footer>
 </section>
 
     <script src="./app.js"></script>
