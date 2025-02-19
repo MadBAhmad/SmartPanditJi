@@ -156,7 +156,7 @@
     <div class="min-h-screen relative">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0  bg-cover bg-center">
-            <img class="w-full" src="./src/assets/peakpx.jpg" alt="">
+            <img class="w-full h-screen" src="./src/assets/peakpx.jpg" alt="">
         </div>
         <div class="absolute inset-0 bg-neutral-400 opacity-20"></div>
         
@@ -381,51 +381,51 @@
 
 <section>
   <footer class="w-full bg-orange-400">
-    <div class="flex items-center ">
-      <div class="w-1/2 lg:flex lg:items-center gap-8 p-4">
-        <img  src="./src/assets/22728176_6690904 (1).svg" alt="">
-        <div class="text-center ">
-          <h1 class="text-3xl ">Shri Angad Dwivedi</h1><br>
-        <p>Address : No. 550/1, 10th Cross, Begur Koppa Road, GRY Layout,
-          Vaddarapajya VTC-Mylasandra, Po-Dommanahalli, Bangalore-500000</p><br>
-          <p class="font-extrabold">Contact Me</p>
-          <div class="flex items-center gap-3 justify-center cursor-pointer p-2 shadow-2xl rounded-md">
-            <img src="./src/assets/whatsapp.svg" alt="">
-            <p>9066154211, 8217337789</p>
+    <div class="flex flex-col lg:flex-row items-start justify-between p-4 lg:p-8">
+      <!-- Left Section -->
+      <div class="w-full lg:w-1/2 flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mb-8 lg:mb-0">
+        <img src="./src/assets/22728176_6690904 (1).svg" alt="" class="w-40 lg:w-48">
+        <div class="text-center lg:text-left">
+          <h1 class="text-2xl lg:text-3xl mb-4">Shri Angad Dwivedi</h1>
+          <p class="text-sm lg:text-base mb-4">
+            Address : No. 550/1, 10th Cross, Begur Koppa Road, GRY Layout,
+            Vaddarapajya VTC-Mylasandra, Po-Dommanahalli, Bangalore-500000
+          </p>
+          <p class="font-extrabold mb-2">Contact Me</p>
+          <div class="flex items-center gap-3 justify-center lg:justify-center cursor-pointer p-2 shadow-lg rounded-md bg-orange-500 hover:bg-orange-600 transition-colors ">
+            <img src="./src/assets/whatsapp.svg" alt="" class="w-6 h-6">
+            <p class="text-sm lg:text-base text-center">9066154211, 8217337789</p>
           </div>
-          
         </div>
       </div>
-
-      <!-- <div class="flex gap-14 justify-evenly"> -->
-      <div class="font-stretch-condensed">
-        <ul>
-          <li>All types of pooja/path</li>
-          <li>Satyanarayan Pooja</li>
-          <li>Marriage</li>
-          <li>Grihapravesh</li>
-          <li>Durga Path</li>
-          <li>Mata ki Chowki</li>
-          <li>North Indian Style Pooja</li>
-        </ul>
-      </div>
-      <div class="font-stretch-condensed">
-        <h1 class>Shri Angad Dwivedi</h1>
-        <ul>
-          <li>All types of pooja/path</li>
-          <li>Satyanarayan Pooja</li>
-          <li>Marriage</li>
-          <li>Grihapravesh</li>
-          <li>Durga Path</li>
-          <li>Mata ki Chowki</li>
-          <li>North Indian Style Pooja</li>
-        </ul>
+  
+      <!-- Right Sections - Hidden on mobile/tablet -->
+      <div class="w-full lg:w-1/2 flex flex-col lg:flex-row justify-end gap-8 lg:gap-12">
+        <div class="hidden lg:block font-stretch-condensed">
+          <ul class="space-y-2 text-sm lg:text-base">
+            <li>All types of pooja/path</li>
+            <li>Satyanarayan Pooja</li>
+            <li>Marriage</li>
+            <li>Grihapravesh</li>
+            <li>Durga Path</li>
+            <li>Mata ki Chowki</li>
+            <li>North Indian Style Pooja</li>
+          </ul>
+        </div>
+        <div class="hidden lg:block font-stretch-condensed">
+          <h1 class="font-bold text-lg lg:text-xl mb-3">Shri Angad Dwivedi</h1>
+          <ul class="space-y-2 text-sm lg:text-base">
+            <li>All types of pooja/path</li>
+            <li>Satyanarayan Pooja</li>
+            <li>Marriage</li>
+            <li>Grihapravesh</li>
+            <li>Durga Path</li>
+            <li>Mata ki Chowki</li>
+            <li>North Indian Style Pooja</li>
+          </ul>
+        </div>
       </div>
     </div>
-      
-
-    </div>
-
   </footer>
 </section>
 
