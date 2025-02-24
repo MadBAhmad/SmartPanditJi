@@ -2,9 +2,9 @@
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 
-mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-});
+// mobileMenuButton.addEventListener('click', () => {
+//     mobileMenu.classList.toggle('hidden');
+// });
 
 // Close menu when clicking outside
 document.addEventListener('click', (event) => {
@@ -57,3 +57,35 @@ setInterval(nextSlide, 5000);
 updateSlide();
 
 
+// Animate Achievements Card
+
+// Intersection Observer for scroll animation
+document.addEventListener('DOMContentLoaded', () => {
+    const statsCards = document.querySelectorAll('.stats-card');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    statsCards.forEach(card => {
+        observer.observe(card);
+    });
+
+    // Number counting animation
+    document.querySelectorAll('.count-up').forEach(element => {
+        const target = parseInt(element.innerText);
+        let count = 0;
+        const interval = setInterval(() => {
+            if (count >= target) {
+                clearInterval(interval);
+                return;
+            }
+            count += Math.ceil(target/50);
+            element.innerText = count + "+";
+        }, 20);
+    });
+});
