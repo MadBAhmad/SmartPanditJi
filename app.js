@@ -86,6 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             count += Math.ceil(target/50);
             element.innerText = count + "+";
-        }, 20);
+        }, 50);
     });
 });
