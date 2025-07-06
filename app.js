@@ -26,10 +26,9 @@ const slides = document.querySelectorAll('#carousel img');
 const totalSlides = slides.length;
 
 function updateSlide() {
-    document.getElementById('carousel').style.transform = 
+    document.getElementById('carousel').style.transform =
         `translateX(-${currentSlide * 100}%)`;
-    
-    // Update dots
+
     document.querySelectorAll('.absolute.bottom-4 div').forEach((dot, index) => {
         dot.style.backgroundColor = index === currentSlide ? 'white' : 'rgba(255,255,255,0.3)';
     });
@@ -49,11 +48,7 @@ function goToSlide(index) {
     currentSlide = index;
     updateSlide();
 }
-
-// Auto-advance slides every 5 seconds
 setInterval(nextSlide, 5000);
-
-// Initialize first dot as active
 updateSlide();
 
 
@@ -91,3 +86,32 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+//Slick slider
+$(document).ready(function(){
+    $('.slider-center').slick({
+      centerMode: true,
+      centerPadding: '40px',
+      slidesToShow: 3,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 768, // tablets
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 480, // mobile
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '20px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  });

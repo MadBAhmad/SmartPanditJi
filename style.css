@@ -1,3 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+.btn-bg{
+  background-color: blue;
+}
+/* Slick sldier */
+.slick-slide {
+      padding: .5rem;
+    }
+
+    .slick-center img {
+      transform: scale(1.05);
+      transition: transform 0.8s;
+    }
+
+     /* Previous arrow */
+  .slick-prev:before {
+    color: black;
+    font-size: 30px; /* Optional: resize icon */
+    
+  }
+
+  /* Next arrow */
+  .slick-next:before {
+    color: black;
+    font-size: 30px; /* Optional */
+  }
+/* end of slick slider */
+.bg-color{
+  background-color: antiquewhite;
+}
 @keyframes marquee {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
