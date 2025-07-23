@@ -153,109 +153,138 @@
  <!-- Services -->
   <section id="services">
     <div class="min-h-screen relative bg-colour-service">
-        <!-- Background Image with Overlay -->
-        <div class="absolute inset-0   bg-cover bg-repeat bg-center">
-            <!-- <img class="w-full h-screen " src="./src/assets/peakpx.jpg" alt=""> -->
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0 bg-cover bg-repeat bg-center"></div>
+  <div class="absolute inset-0 opacity-20 bg-black"></div>
+
+  <!-- Content Container -->
+  <div class="relative container mx-auto px-4 py-6 pt-4 z-10">
+    <div class="mb-12">
+      <h1 class="text-center text-3xl sm:text-4xl uppercase font-extrabold font-stretch-condensed">
+        <span class="text-red-600 font-stretch-condensed">Our Services</span><br>How We Can Help?
+      </h1>
+    </div>
+
+    <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+
+      <!-- Card 1: Satyanarayan Katha -->
+      <div class="bg-white rounded-md shadow-md">
+        <div class="flex flex-col sm:flex-row">
+          <div class="w-full sm:w-1/2">
+            <img class="object-cover w-full h-[250px] sm:h-full rounded-t-md sm:rounded-l-md sm:rounded-t-none" src="./src/assets/slider3 (1).jpeg" alt="Satyanarayan Pooja">
+          </div>
+          <div class="w-full sm:w-1/2 flex flex-col text-center justify-center p-4">
+            <h2 class="mb-2 font-extrabold text-red-600">Sri Satyanarayan Pooja</h2>
+            <p class="text-gray-600 mb-4 text-sm">A sacred ritual to Lord Vishnu, bringing prosperity and harmony. Performed for success and wish fulfillment.</p>
+            <p class="font-semibold mb-4">
+              Price:
+              <a href="https://api.whatsapp.com/send?phone=919066154211..." target="_blank">
+                <span class="text-red-500 hover:text-orange-500">₹ Price on Request</span>
+              </a>
+            </p>
+          </div>
         </div>
-        <div class="absolute inset-0 opacity-20"></div>
-        
-        <!-- Content Container -->
-        <div class="relative container mx-auto px-2 py-6 pt-4 z-10">
-            <div class="mb-12">
-                <h1 class="text-center text-4xl uppercase font-extrabold font-stretch-condensed "><span class="text-red-600 font-stretch-condensed">Our Services</span><br>How We Can Help ?</h1>
-            </div>
+      </div>
 
-            <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-6 hover:cursor-pointer">
-
-              <!-- Box:1 -- Satyanarayan Katha -->
-                <div class="w-full  bg-white rounded-md shadow-md hover:cursor-pointer">  <! --container structure ->
-                  <div class="lg:flex md:flex">
-                    <div class="left md:w-1/2 ">
-                      <img class="object-fit h-full rounded-md" src="./src/assets/slider3 (1).jpeg" alt="">
-                    </div>
-                    <div class="right md:w-1/2 flex-col text-center pt-3">
-                          <H1 class="mb-2 font-extrabold text-red-600">Sri Satyanarayan Pooja</H1>
-                          <p class="text-gray-600 mb-4 p-2 sm:text-sm">Satyanarayan Katha is a sacred Hindu ritual dedicated to Lord Vishnu, bringing prosperity, harmony, and divine blessings. It is performed to seek success and fulfillment of wishes.</p>
-                          <p class="font-semibold mb-4 hover:text-blue-600">Price: <a href="https://api.whatsapp.com/send?phone=919066154211&text=Thank%20you%20for%20contacting.....%20(Pooja/path,Booking)🙏%0A%0APandit%20ji,%20Shri%20Angad%20Dwivedi%0A%0AWebsite%20:-%20www.smartpanditji.com%0AEmail%20:-%20smartpanditji11@gmail.com%0A%0ACont%20:-%209066154211,%208217337789✍️%0A%0A🚩🚩जय%20श्री%20राधे%20राधे🚩🚩" target="_blank"><span class="text-red-500 hover:text-orange-500 ">₹ Price on Request</span></a></p>
-                    </div>
-                  </div>
-                </div>
-                  <!-- End of Box:1 -->
-                
-                  <!-- Box:2 -- Premium Griha Pravesh -->
-                  <div class="w-full  bg-white rounded-md shadow-md">  <! --container structure ->
-                    <div class="lg:flex md:flex ">
-                      <div class="left md:w-1/2 ">
-                        <img class="object-fit h-full rounded-md" src="./src/assets/slider4 (1).jpeg" alt="">
-                      </div>
-                      <div class="right md:w-1/2 flex-col text-center pt-3">
-                            <H1 class="mb-2 font-extrabold text-red-600">Nutan Griha Pravesh pooja</H1>
-                            <p class="text-gray-600 mb-4 p-2 sm:text-sm">A grand Griha Pravesh pooja ensures a home is blessed with peace, prosperity, and protection from negativity. Performed with Vedic rituals, it invites divine energies.</p>
-                            <p class="font-semibold mb-4">Price: <a href="https://api.whatsapp.com/send?phone=919066154211&text=Thank%20you%20for%20contacting.....%20(Pooja/path,Booking)🙏%0A%0APandit%20ji,%20Shri%20Angad%20Dwivedi%0A%0AWebsite%20:-%20www.smartpanditji.com%0AEmail%20:-%20smartpanditji11@gmail.com%0A%0ACont%20:-%209066154211,%208217337789✍️%0A%0A🚩🚩जय%20श्री%20राधे%20राधे🚩🚩" target="_blank"><span class="text-red-500 hover:text-orange-500 ">₹ Price on Request</span></a></p>
-                      </div>
-                    </div>
-                  </div>
-                <!-- End of Box:2 -->
-
-                <!-- Box:3 -- Rudra Abhishek -->
-                <div class="w-full  bg-white rounded-md shadow-md">  <! --container structure ->
-                  <div class="lg:flex md:flex">
-                    <div class="left md:w-1/2 ">
-                      <img class="object-fit h-full rounded-md " src="./src/assets/slider2 (1).jpeg" alt="">
-                    </div>
-                    <div class="right md:w-1/2 flex-col text-center pt-3">
-                          <H1 class="mb-2 font-extrabold text-red-600">Shri Rudrabhishek pooja</H1>
-                          <p class="text-gray-600 mb-4 p-2 sm:text-sm">Rudra Abhishek is a powerful Vedic ritual dedicated to Lord Shiva, invoking divine blessings, removing obstacles, and bringing prosperity, peace, and spiritual upliftment.</p>
-                          <p class="font-semibold mb-4">Price: <a href="https://api.whatsapp.com/send?phone=919066154211&text=Thank%20you%20for%20contacting.....%20(Pooja/path,Booking)🙏%0A%0APandit%20ji,%20Shri%20Angad%20Dwivedi%0A%0AWebsite%20:-%20www.smartpanditji.com%0AEmail%20:-%20smartpanditji11@gmail.com%0A%0ACont%20:-%209066154211,%208217337789✍️%0A%0A🚩🚩जय%20श्री%20राधे%20राधे🚩🚩" target="_blank"><span class="text-red-500 hover:text-orange-500">₹ Price on Request</span></a></p>
-                    </div>
-                  </div>
-                </div>
-              <!-- End of Box:3 -->
-
-              <!-- Box:4 -- Office Pooja -->
-              <div class="w-full  bg-white rounded-md shadow-md">  <! --container structure ->
-                <div class="lg:flex md:flex ">
-                  <div class="left md:w-1/2 ">
-                    <img class="object-fit h-full rounded-md" src="./src/assets/slider5 (1).jpeg" alt="">
-                  </div>
-                  <div class="right md:w-1/2 flex-col text-center pt-3">
-                        <H1 class="mb-2 font-extrabold text-red-600">⁠Shri Sundar kand/Path</H1>
-                        <p class="text-gray-600 mb-4 p-2 sm:text-sm">Office Pooja ensures a positive and successful beginning for new ventures, invoking divine blessings for growth, harmony, and financial stability in the workplace.</p>
-                        <p class="font-semibold mb-4">Price: <a href="https://api.whatsapp.com/send?phone=919066154211&text=Thank%20you%20for%20contacting.....%20(Pooja/path,Booking)🙏%0A%0APandit%20ji,%20Shri%20Angad%20Dwivedi%0A%0AWebsite%20:-%20www.smartpanditji.com%0AEmail%20:-%20smartpanditji11@gmail.com%0A%0ACont%20:-%209066154211,%208217337789✍️%0A%0A🚩🚩जय%20श्री%20राधे%20राधे🚩🚩" target="_blank"><span class="text-red-500 hover:text-orange-500 ">₹ Price on Request</span></a></p>
-                  </div>
-                </div>
-              </div>
-            <!-- End of Box:4 -->
-                      <div class="w-full  bg-white rounded-md shadow-md">  <! --container structure ->
-                <div class="lg:flex md:flex ">
-                  <div class="left md:w-1/2 ">
-                    <img class="object-fit h-full rounded-md" src="./src/assets/slider5 (1).jpeg" alt="">
-                  </div>
-                  <div class="right md:w-1/2 flex-col text-center pt-3">
-                        <H1 class="mb-2 font-extrabold text-red-600">Gandmul, Nakshatra shanti pooja (sataisa)</H1>
-                        <p class="text-gray-600 mb-4 p-2 sm:text-sm">Office Pooja ensures a positive and successful beginning for new ventures, invoking divine blessings for growth, harmony, and financial stability in the workplace.</p>
-                        <p class="font-semibold mb-4">Price: <a href="https://api.whatsapp.com/send?phone=919066154211&text=Thank%20you%20for%20contacting.....%20(Pooja/path,Booking)🙏%0A%0APandit%20ji,%20Shri%20Angad%20Dwivedi%0A%0AWebsite%20:-%20www.smartpanditji.com%0AEmail%20:-%20smartpanditji11@gmail.com%0A%0ACont%20:-%209066154211,%208217337789✍️%0A%0A🚩🚩जय%20श्री%20राधे%20राधे🚩🚩" target="_blank"><span class="text-red-500 hover:text-orange-500 ">₹ Price on Request</span></a></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="w-full  bg-white rounded-md shadow-md">  <! --container structure ->
-                <div class="lg:flex md:flex ">
-                  <div class="left md:w-1/2 ">
-                    <img class="object-fit sm:h-[250px] sm:w-[375px] h-full rounded-md" src="./src/assets/Shubh_vivah.png" alt="">
-                  </div>
-                  <div class="right md:w-1/2 flex-col text-center pt-3">
-                        <H1 class="mb-2 font-extrabold text-red-600">⁠Shubh Vivah<br>(Marriage function)</H1>
-                        <p class="text-gray-600 mb-4 p-2 sm:text-sm">Office Pooja ensures a positive and successful beginning for new ventures, invoking divine blessings for growth, harmony, and financial stability in the workplace.</p>
-                        <p class="font-semibold mb-4">Price: <a href="https://api.whatsapp.com/send?phone=919066154211&text=Thank%20you%20for%20contacting.....%20(Pooja/path,Booking)🙏%0A%0APandit%20ji,%20Shri%20Angad%20Dwivedi%0A%0AWebsite%20:-%20www.smartpanditji.com%0AEmail%20:-%20smartpanditji11@gmail.com%0A%0ACont%20:-%209066154211,%208217337789✍️%0A%0A🚩🚩जय%20श्री%20राधे%20राधे🚩🚩" target="_blank"><span class="text-red-500 hover:text-orange-500 ">₹ Price on Request</span></a></p>
-                  </div>
-                </div>
-              </div>
-              <!-- End of Box 6 -->
-            </div>
-                
-            </div>
+      <!-- Card 2: Griha Pravesh -->
+      <div class="bg-white rounded-md shadow-md">
+        <div class="flex flex-col sm:flex-row">
+          <div class="w-full sm:w-1/2">
+            <img class="object-cover w-full h-[250px] sm:h-full rounded-t-md sm:rounded-l-md sm:rounded-t-none" src="./src/assets/slider4 (1).jpeg" alt="Griha Pravesh">
+          </div>
+          <div class="w-full sm:w-1/2 flex flex-col text-center justify-center p-4">
+            <h2 class="mb-2 font-extrabold text-red-600">Nutan Griha Pravesh Pooja</h2>
+            <p class="text-gray-600 mb-4 text-sm">Performed with Vedic rituals to bless a new home with peace, prosperity, and positive energy.</p>
+            <p class="font-semibold mb-4">
+              Price:
+              <a href="https://api.whatsapp.com/send?phone=919066154211..." target="_blank">
+                <span class="text-red-500 hover:text-orange-500">₹ Price on Request</span>
+              </a>
+            </p>
+          </div>
         </div>
+      </div>
+
+      <!-- Card 3: Rudra Abhishek -->
+      <div class="bg-white rounded-md shadow-md">
+        <div class="flex flex-col sm:flex-row">
+          <div class="w-full sm:w-1/2">
+            <img class="object-cover w-full h-[250px] sm:h-full rounded-t-md sm:rounded-l-md sm:rounded-t-none" src="./src/assets/slider2 (1).jpeg" alt="Rudrabhishek Pooja">
+          </div>
+          <div class="w-full sm:w-1/2 flex flex-col text-center justify-center p-4">
+            <h2 class="mb-2 font-extrabold text-red-600">Shri Rudrabhishek Pooja</h2>
+            <p class="text-gray-600 mb-4 text-sm">A powerful ritual to Lord Shiva, removing obstacles and bringing spiritual upliftment and prosperity.</p>
+            <p class="font-semibold mb-4">
+              Price:
+              <a href="https://api.whatsapp.com/send?phone=919066154211..." target="_blank">
+                <span class="text-red-500 hover:text-orange-500">₹ Price on Request</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Office Pooja -->
+      <div class="bg-white rounded-md shadow-md">
+        <div class="flex flex-col sm:flex-row">
+          <div class="w-full sm:w-1/2">
+            <img class="object-cover w-full h-[250px] sm:h-full rounded-t-md sm:rounded-l-md sm:rounded-t-none" src="./src/assets/slider5 (1).jpeg" alt="Office Pooja">
+          </div>
+          <div class="w-full sm:w-1/2 flex flex-col text-center justify-center p-4">
+            <h2 class="mb-2 font-extrabold text-red-600">⁠Shri Sundar Kand / Path</h2>
+            <p class="text-gray-600 mb-4 text-sm">Performed for office prosperity and blessings. Encourages growth, harmony, and financial stability at work.</p>
+            <p class="font-semibold mb-4">
+              Price:
+              <a href="https://api.whatsapp.com/send?phone=919066154211..." target="_blank">
+                <span class="text-red-500 hover:text-orange-500">₹ Price on Request</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Nakshatra Shanti Pooja -->
+      <div class="bg-white rounded-md shadow-md">
+        <div class="flex flex-col sm:flex-row">
+          <div class="w-full sm:w-1/2">
+            <img class="object-cover w-full h-[250px] sm:h-full rounded-t-md sm:rounded-l-md sm:rounded-t-none" src="./src/assets/slider5 (1).jpeg" alt="Nakshatra Shanti Pooja">
+          </div>
+          <div class="w-full sm:w-1/2 flex flex-col text-center justify-center p-4">
+            <h2 class="mb-2 font-extrabold text-red-600">Gandmool / Nakshatra Shanti (Sataisa)</h2>
+            <p class="text-gray-600 mb-4 text-sm">Performed to nullify the ill effects of Gandmool Nakshatra, bringing harmony and protection to newborns.</p>
+            <p class="font-semibold mb-4">
+              Price:
+              <a href="https://api.whatsapp.com/send?phone=919066154211..." target="_blank">
+                <span class="text-red-500 hover:text-orange-500">₹ Price on Request</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6: Shubh Vivah -->
+      <div class="bg-white rounded-md shadow-md">
+        <div class="flex flex-col sm:flex-row">
+          <div class="w-full sm:w-1/2">
+            <img class="object-cover w-full h-[250px] sm:h-full rounded-t-md sm:rounded-l-md sm:rounded-t-none" src="./src/assets/Shubh_vivah.png" alt="Shubh Vivah">
+          </div>
+          <div class="w-full sm:w-1/2 flex flex-col text-center justify-center p-4">
+            <h2 class="mb-2 font-extrabold text-red-600">⁠Shubh Vivah (Marriage Function)</h2>
+            <p class="text-gray-600 mb-4 text-sm">Performed for a blissful marital life, invoking divine blessings and harmony between couples.</p>
+            <p class="font-semibold mb-4">
+              Price:
+              <a href="https://api.whatsapp.com/send?phone=919066154211..." target="_blank">
+                <span class="text-red-500 hover:text-orange-500">₹ Price on Request</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
     
 </section>
 <!-- Section 3 -->
